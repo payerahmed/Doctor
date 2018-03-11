@@ -1,0 +1,276 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background-color: #fffeff;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Raleway, sans-serif;
+}
+
+.navbar{
+  display: flex;
+  justify-content:center;
+}
+.navleft img{
+  width: 10%;
+  margin-top: 2%;
+}
+.navright{
+  margin: 20px;
+}
+.navright a{
+  margin:  20px;
+  text-decoration: none;
+  color: black;
+}
+.navright :nth-child(1){
+  color: crimson;
+}
+.navright i{
+  color:darkblue;
+}
+.home{
+  background-image: url("image/home-section.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+.home h1{
+ padding-top: 10%; 
+ font-weight: 400;
+}
+.home h2{
+  font-size: 4em;
+  margin: 1% 26% 1% 26%;
+  padding: 0;
+
+  color: white;
+  background-color:rgba(197, 183, 183, 0.2);
+}
+.home h2 span{
+  color: tomato;
+}
+.home p{
+  margin: 0% 40% 1% 40%;
+}
+
+.d-flex {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.home button{
+  color: white;
+  background-color:tomato;
+  border-style: none;
+  font-size: 1em;
+  padding: 10px;
+  width: 10%;
+}
+.home button:hover + i{
+  animation-name: move;
+  animation-fill-mode: forwards;
+  animation-duration: 900ms;
+  animation-timing-function: ease-in;
+}
+.home i{
+  opacity: 0;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color:#FF8A65;
+  color: white;
+  border: 1px solid #FF8A65;
+}
+@keyframes move{
+  from{
+    transform: translateX(-15px);
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.contenar{
+  margin-top: 5%;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+ 
+}
+.contenarleft img{
+  height: 400px;
+}
+.contenarright{
+  background-color: #fff;
+  width: 30%;
+  height: 400px;
+  
+
+}
+.contenarright h1{
+  color: #2196F3;
+  padding: 0;
+  font-size: 1.8em;
+}
+.contenarright p{
+  margin: 1% 20% 2% 20%;
+}
+.contenarright input{
+  width: 35%;
+  margin: 2%;
+  padding: 10px;
+}
+.contenar1{
+  background-color: #fff;
+  /* margin-top: 22%; */
+  padding-bottom: 5%;
+}
+.center{
+  text-align: center;
+}
+.center h1{
+  font-weight: bold;
+}
+.center h1 span{
+  color: #2196F3;
+}
+.center i{
+  font-size: 2em;
+  color: tomato;
+}
+
+.center p{
+  margin: 0% 42% 2% 42%;
+
+}
+.contenar1parent{
+  font-family: sans-serif;
+  /* font-weight: bold; */
+  margin: 0% 20% 0% 20%;
+  grid-gap: 15px;
+  text-align: center;
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-template-areas:
+  "a b c"
+  "d e f";
+}
+.contenarchild1{
+  grid-area: a;
+  background-color: #2196F3;
+  color: white;
+}
+.contenarchild2{
+  grid-area: b;
+  background-color: #F5F5F5;
+}
+.contenarchild3{
+  grid-area: c;
+  background-color: #F5F5F5;
+}
+.contenarchild4{
+  grid-area: d;
+  background-color: #F5F5F5;
+}
+.contenarchild5{
+  grid-area: e;
+  background-color: #F5F5F5;
+}
+.contenarchild6{
+  grid-area: f;
+  background-color: #F5F5F5;
+}
+.x i{
+  font-size: 2em;
+  margin-top: 5%;
+  color: green;
+}
+.x h1{
+  font-size: 1.5em;
+}
+.pp{
+  text-align: center;
+  margin: 0% 40%;
+  width: 20%;
+  height: 3px;
+  background-color: tomato;
+}
+.contenar2{
+  background-color:lightgray;
+  padding: 25px 0;
+}
+
+.contenar2 .child img{
+  height: 400px;
+}
+.contenar2 .child{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.contenar2 .center h1 {
+  text-transform: uppercase;
+}
+.contenar2 .child .right {
+  width: 30%;
+  text-align: center;
+  background-color: #fff;
+  padding: 5px;
+}
+.li a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+  padding: 5px;
+  border-top: 1px solid #2196F3;
+  border-bottom: 1px solid #2196F3; 
+}
+.cc{
+  margin-top: 4%;
+}
+.grid{
+  height: 500px;
+  display: grid;
+  margin: 4% 20% 4% 20%;
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-areas: 
+  "aa bb cc"
+  "aa dd cc"
+  "ee dd ff";
+}
+
+.i{
+  grid-area: aa;
+  background-image: url("image/i.jpg")
+
+}
+.i1{
+  grid-area: bb;
+  background-image: url("image/i5.jpg")
+}
+.i2{
+  grid-area: cc;
+  background-color: rgb(128, 82, 68);
+}
+.i3{
+  grid-area: dd;
+  background-color: rgb(156, 201, 33);
+
+}
+.i4{
+  grid-area: ee;
+  background-color: #FF8A65;
+}
+.i5{
+  grid-area: ff;
+  background-color: rgb(197, 105, 77);
+}
