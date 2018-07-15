@@ -3,6 +3,7 @@ body{
   padding: 0;
   font-family: Roboto, sans-serif;
   background-color: #fffeff;
+  font-size: 14px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -97,8 +98,9 @@ label{
  font-weight: 400;
 }
 .home h2{
-  font-size: 4em;
-  margin: 1% 26% 1% 26%;
+  font-size: 4rem;
+  margin:0 auto;
+  display: inline;
   padding: 0;
   white-space: nowrap;
   color: white;
@@ -108,7 +110,8 @@ label{
   color: tomato;
 }
 .home p{
-  margin: 0% 40% 1% 40%;
+  width: 40%;
+  margin: 10px auto;
 }
 
 .d-flex {
@@ -359,48 +362,61 @@ label{
   margin-top: 4%;
 }
 .grid{
-  height: 500px;
+  height: 720px;
+  width: 100%;
   display: grid;
  
   grid-gap: 15px;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr 2fr;
   grid-template-areas: 
-  "a aa bb cc b"
-  "a aa dd cc b"
-  "a ee dd ff b";
+  ". aa bb cc ."
+  ". aa dd cc ."
+  ". ee dd ff .";
+}
+.grid img{
+  height: 100%;
+  width: 100%;
+  
 }
 
 .i{
   grid-area: aa;
-  background-image: url("image/i3.jpg");
-  background-position: center;
-  background-color: #FF8A65;
   
 }
 .i1{
   grid-area: bb;
-  background-image: url("image/i4.jpg")
+ 
 }
 .i2{
   grid-area: cc;
-  background-image: url("image/i6.jpg")
+  
 }
 .i3{
   grid-area: dd;
-  background-image: url("image/i1.jpg")
+  
 
 }
 .i4{
   grid-area: ee;
-  background-color: #FF8A65;
 }
 .i5{
   grid-area: ff;
-  background-color: rgb(197, 105, 77);
 }
 @media(max-width:640px){
   .grid{
-    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "aa"
+    "bb"
+    "cc"
+    "dd"
+    "ee"
+    "ff" ;
+  }
+  .grid img{
+    width: 100%;
+    height: 300px;
   }
 }
